@@ -1,0 +1,144 @@
+/* Body Elements */
+* {
+  /* height & width now includes border & padding */
+  box-sizing: border-box;
+}
+body {
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  font-size: 80px;
+}
+
+h2 {
+  color: white;
+  text-align: center;
+  font-size: 30px;
+}
+
+h3 {
+  display: block;
+  font-size: 30px;
+  color: white;
+  text-align: center;
+  position: inherit;
+  bottom: 50%;
+}
+
+p {
+  text-align: center;
+  color: white;
+  font-size: 30px;
+  padding: 40px;
+}
+
+/* Game Board */
+.Middle {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  background: #c68504;
+  font-size: 45px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 20px;
+  border-radius: 50px;
+  height: 500px;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(3, auto);
+  max-width: 500px;
+}
+
+.box {
+  background-color: #ddc98e9e;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 8px;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+  height: 140px;
+  width: 140px;
+}
+
+/* Pop-up Windows */
+.status {
+  color: white;
+  text-align: center;
+  display: flex;
+  margin: 15px;
+  justify-content: space-around;
+}
+
+.final-results {
+  display: none;
+  position: absolute;
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  height: 20px;
+  width: 300px;
+  padding: 120px;
+  background: rgba(0, 0, 0, 0.769);
+  left: 50%;
+  top: 60%;
+  transform: translate(-50%, -100%);
+  border-radius: 30px;
+}
+
+#try-again {
+  background-color: #c68504;
+  border-radius: 10px;
+  padding: 15px;
+  color: #ddc98e;
+  font-family: "Roboto", sans-serif;
+  font-size: 25px;
+  position: inherit;
+  top: 50%;
+}
+
+#try-again:hover {
+  background-color: #ddc98e;
+  color: black;
+}
+
+.reset-button {
+  margin: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+#reset {
+  background-color: #ddc98e;
+  border-radius: 10px;
+  padding: 15px;
+  color: #c68504;
+  font-family: "Roboto", sans-serif;
+  font-size: 25px;
+}
+
+#reset:hover {
+  background-color: #c68504;
+  color: white;
+}
+
+#turn-indicator {
+  color: white;
+  text-align: center;
+  font-size: 80px;
+}
